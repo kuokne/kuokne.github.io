@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+        body{
+            font-size: 24px;
+        }
+    
+        .clearfix::after{
+            content:"";
+            display:block;
+            clear:both;
+        }
+
+        /* end css chung */
+
+
+        .site-wrap{
+            width: 1200px;
+            margin: 0 auto;
+
+        }
+
+        .header{
+            height: 250px;
+            background-color: grey;
+            color: white;
+            padding:20px;
+            box-sizing: border-box;
+        }
+        /* end css header */
+
+        .nav ul{
+            list-style: none;
+            margin: 0;
+            padding: 0 10px;
+            box-sizing: border-box;
+            background-color: greenyellow;
+        }
+
+        .nav ul>li{
+            float: left;
+            width: 150px;
+            padding: 10px 0;
+            background-color: greenyellow;
+        }
+        
+        .nav ul>li>a{
+            text-decoration: none;
+            color: aqua;
+
+        }
+        .nav ul>li>a:hover{
+            color:orange;
+        }
+
+        /* end css navigation  */
+
+        .content{
+            width: 100%;
+
+        }
+
+        .sidebar-left{
+            width: 25%;
+            background-color: grey;
+            color: white;
+            height: 750px;
+            float: left;
+            padding:20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar-right{
+            width: 25%;
+            background-color: grey;
+            color: white;
+            height: 750px;   
+            float: right;
+            padding:20px;
+            box-sizing: border-box;
+        }
+
+        .main-content{
+            width: 50%;
+            background-color: bisque;
+            height: 750px;
+            float: left;
+            overflow:auto;
+            padding:20px;
+            box-sizing: border-box;
+        }
+
+        /* end css content */
+
+        .footer{
+            width: 100%;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 250px;
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="site-wrap">
+        <div class="header">
+            <h1>header của trang web</h1>
+        </div> <!-- end .header -->
+
+        <div class="nav">
+            <ul class="clearfix">
+                <li><a href="">Trang chủ</a></li>
+                <li><a href="">Giới thiệu</a></li>
+                <li><a href="">Sản phẩm</a></li>
+                <li><a href="">Liên hệ</a></li>
+            </ul>
+        </div>  <!-- end .nav -->
+
+        <div class="content clearfix">
+            <div class="sidebar sidebar-left">
+                <h4>Sidebar left</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias rerum sequi ut optio, repellendus itaque esse mollitia facere non incidunt fugit blanditiis quaerat corporis dicta eligendi consectetur. Ab, ea suscipit.</p>
+            </div> <!-- end .sidebar-left -->
+
+            <div class="main-content">
+                <h2>Nội dung chính của trang web</h2>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ab cupiditate odio vitae ipsum beatae, facere et. Dolor ipsa a quaerat voluptatem dignissimos, enim vitae voluptatibus corporis, laborum magnam recusandae.
+                    Ipsa facere error officia consequatur ex molestias modi asperiores ratione velit placeat voluptatem tempore accusamus, ut perspiciatis quibusdam esse commodi eveniet quae sunt impedit qui atque dolorem debitis. Adipisci, voluptatem.
+                    Atque, perferendis ducimus. Possimus, fuga. Et unde aspernatur corrupti odit architecto perspiciatis ea fugit maxime voluptatibus? Qui commodi facilis necessitatibus minima incidunt, pariatur quis, reprehenderit, veritatis fugit amet iusto architecto.
+                </div>
+            </div> <!-- end .main-content -->
+            
+            <div class="sidebar sidebar-right">
+                <h4>Sidebar right</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias rerum sequi ut optio, repellendus itaque esse mollitia facere non incidunt fugit blanditiis quaerat corporis dicta eligendi consectetur. Ab, ea suscipit.</p>
+            </div>  <!-- end .sidebar-right -->
+           
+        </div>  <!-- end .cotent -->
+
+        <div class="footer">
+            <h3>Phần chân của website</h3>
+            <p>Copyright thuộc về W3school 2020</p>
+        </div>  <!-- end .footer -->
+    </div>  <!-- end.site-wrap -->
+</body>
+</html>
